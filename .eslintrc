@@ -1,0 +1,55 @@
+{
+  "env": {
+    "browser": true,
+    "jest": true,
+    "es6": true
+  },
+  "globals": {
+    "document": true,
+    "window": true,
+    "__DEV__": true
+  },
+  "plugins": [
+    "import",
+    "react",
+    "react-native",
+    "flowtype",
+    "standard"
+  ],
+  "parser": "babel-eslint",
+  "extends": [
+    "react-app",
+    "standard"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true
+    }
+  },
+  "rules": {
+    "import/order": "error",
+    "comma-dangle": [ "error", "always-multiline" ],
+    "array-bracket-spacing": [ "error", "never" ],
+    "object-curly-spacing": [ "error", "always" ],
+    "react/forbid-prop-types": [1],
+    "react/require-default-props": [1],
+    "react/default-props-match-prop-types": [1],
+    "no-unused-vars": [1],
+    "max-len": ["warn", 120, { "ignoreStrings": true, "ignoreTemplateLiterals": true }],
+    "react/no-unescaped-entities": [0],
+    "indent": ["warn", 2],
+    "space-before-function-paren": ["error", "always"],
+    "jsx-quotes": ["error", "prefer-single"],
+    "jsx-a11y/href-no-hash": "off",
+    "jsx-a11y/anchor-is-valid": ["warn", { "aspects": ["invalidHref"] }]
+  },
+  "settings": {
+    "import/core-modules": [
+      "redux-saga/effects"
+    ]
+  }
+}
+  
